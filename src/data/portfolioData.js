@@ -1,9 +1,21 @@
-﻿export const portfolioData = {
+﻿import inventoryImage from '../assets/inventory.png';
+import ecommerceImage from '../assets/ecommerce.png';
+import sfcImage from '../assets/sfc.png';
+import carrentalImage from '../assets/carrental.png';
+import heroPhoto from '../assets/pic.jpg';
+import aiCertificate from '../certificates/AI_Fundamentals_with_IBM_SkillsBuild_certificate_.pdf';
+import dataAnalyticsCertificate from '../certificates/Data_Analytics_Essentials.pdf';
+import databasesCertificate from '../certificates/Databases.pdf';
+import englishIT1Certificate from '../certificates/English_for_IT_1.pdf';
+import englishIT2Certificate from '../certificates/English_for_IT_2.pdf';
+import packetTracerCertificate from '../certificates/Introduction_to_Packet_Tracer.pdf';
+
+export const portfolioData = {
   hero: {
     name: "Alvin Panganiban",
     firstName: "Alvin",
     lastName: "Panganiban",
-    photo: "/src/assets/pic.jpg",
+    photo: heroPhoto,
     title: "Web Developer",
     subtitle: "An Information Technology graduate specializing in Web Development",
     description: "I build responsive websites, practical business systems, and clean digital experiences using modern frontend and backend tools.",
@@ -119,7 +131,7 @@
       description: "A comprehensive inventory system with employee management featuring payroll, cashier attendance tracking, and transaction handling.",
       features: ["Employee management", "Payroll system", "Cashier attendance", "Transaction handling"],
       techStack: [ "PHP", "MySQL"],
-      image: "/src/assets/inventory.png",
+      image: inventoryImage,
       github: "https://github.com",
       demo: "https://miginventory.is-great.net"
     },
@@ -130,7 +142,7 @@
       description: "A full e-commerce platform with product browsing, cart workflows, order handling, and PayMongo payment integration.",
       features: ["Product catalog", "PayMongo payments", "Shopping cart", "Order tracking"],
       techStack: ["PHP", "MySQL", "PayMongo API"],
-      image: "/src/assets/ecommerce.png",
+      image: ecommerceImage,
       github: "https://github.com",
       demo: "https://jmshopee.is-great.net/"
     },
@@ -141,7 +153,7 @@
       description: "A customizable landing page with dynamic content management and responsive design.",
       features: ["Custom content", "Responsive design", "Dynamic sections", "Modern UI"],
       techStack: ["React", "Tailwind CSS"],
-      image: "/src/assets/sfc.png",
+      image: sfcImage,
       github: "https://github.com",
       demo: "https://sfcfranchise.ph/"
     },
@@ -152,7 +164,7 @@
       description: "A comprehensive car rental management system with vehicle tracking, customer management, reservation handling, and payment processing.",
       features: ["Vehicle management", "Customer verification", "Reservation system", "Payment tracking"],
       techStack: ["PHP", "MySQL", "JavaScript"],
-      image: "/src/assets/carrental.png",
+      image: carrentalImage,
       github: "https://github.com/vingit40-bit/carrental.git",
       demo: "Live preview not available"
     }
@@ -188,7 +200,7 @@
       issuer: "IBM",
       date: "2024",
       description: "Introduction to artificial intelligence concepts and IBM AI technologies.",
-      file: "/src/certificates/AI_Fundamentals_with_IBM_SkillsBuild_certificate_.pdf"
+      file: aiCertificate
     },
     {
       id: 2,
@@ -196,7 +208,7 @@
       issuer: "Coursera",
       date: "2024",
       description: "Learned Excel, SQL, and Tableau for data transformation, organization, and visualization.",
-      file: "/src/certificates/Data_Analytics_Essentials.pdf"
+      file: dataAnalyticsCertificate
     },
     {
       id: 3,
@@ -204,7 +216,7 @@
       issuer: "Certiport",
       date: "2024",
       description: "Certified expertise in database management and SQL fundamentals.",
-      file: "/src/certificates/Databases.pdf",
+      file: databasesCertificate,
       blur: true
     },
     {
@@ -213,7 +225,7 @@
       issuer: "Coursera",
       date: "2024",
       description: "B2 level English proficiency for IT professionals and workplace communication.",
-      file: "/src/certificates/English_for_IT_1.pdf"
+      file: englishIT1Certificate
     },
     {
       id: 5,
@@ -221,7 +233,7 @@
       issuer: "Coursera",
       date: "2024",
       description: "Advanced B2 level English for technical IT contexts and professional use.",
-      file: "/src/certificates/English_for_IT_2.pdf"
+      file: englishIT2Certificate
     },
     {
       id: 6,
@@ -229,7 +241,7 @@
       issuer: "Cisco",
       date: "2024",
       description: "Network simulation and configuration using Cisco Packet Tracer tool.",
-      file: "/src/certificates/Introduction_to_Packet_Tracer.pdf"
+      file: packetTracerCertificate
     }
   ],
 
