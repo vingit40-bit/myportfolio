@@ -150,7 +150,7 @@ export const portfolioData = {
       id: 3,
       title: "SFC Custom Landing Page",
       category: "Landing Page",
-      description: "A customizable landing page with dynamic content management and responsive design.",
+      description: "A customizable landing page with dynamic content management and responsive design. Built during internship at ProvideTech Brandwave Advertising Services.",
       features: ["Custom content", "Responsive design", "Dynamic sections", "Modern UI"],
       techStack: ["React", "Tailwind CSS"],
       image: sfcImage,
