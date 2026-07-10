@@ -1,5 +1,5 @@
 ﻿import { motion } from 'framer-motion';
-import { ArrowUp, Facebook, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowUp, Facebook, Github, Mail } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 
 const Footer = () => {
@@ -20,9 +20,6 @@ const Footer = () => {
         <div className="flex items-center gap-3">
           <a href={portfolioData.hero.social.github} target="_blank" rel="noopener noreferrer" className="text-white/65 hover:text-primary" aria-label="GitHub">
             <Github size={18} />
-          </a>
-          <a href={portfolioData.hero.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-white/65 hover:text-primary" aria-label="LinkedIn">
-            <Linkedin size={18} />
           </a>
           <a href={portfolioData.hero.social.facebook} target="_blank" rel="noopener noreferrer" className="text-white/65 hover:text-primary" aria-label="Facebook">
             <Facebook size={18} />

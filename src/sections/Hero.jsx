@@ -30,7 +30,6 @@ const Hero = () => {
           </motion.div>
 
           <h1 className="font-sans text-5xl font-black uppercase md:text-7xl xl:text-8xl">
-            <span className="block text-white/95">Creative</span>
             {nameParts.map((part, index) => (
               <motion.span
                 key={part}

@@ -26,8 +26,7 @@ export const portfolioData = {
     },
     social: {
       github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      facebook: "https://facebook.com",
+      facebook: "https://web.facebook.com/alvin.panganiban.71",
       email: "panganibanalvin4@gmail.com"
     }
   },
@@ -274,8 +273,7 @@ export const portfolioData = {
     address: "Pantalan, Nasugbu, Batangas",
     social: {
       github: "https://github.com",
-      linkedin: "https://linkedin.com",
-      facebook: "https://facebook.com",
+      facebook: "https://web.facebook.com/alvin.panganiban.71",
       twitter: "https://twitter.com"
     }
   },
