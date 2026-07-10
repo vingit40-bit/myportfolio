@@ -157,6 +157,17 @@ export const portfolioData = {
       github: "https://github.com",
       demo: "https://sfcfranchise.ph/"
     },
+     {
+      id: 4,
+      title: "Inventory Management System",
+      category: "Inventory System",
+      description: "A comprehensive inventory system with branch-based login for cashiers and QR code attendance tracking.",
+      features: ["Branch-based login", "Cashier management", "QR attendance", "Multi-location support"],
+      techStack: ["PHP", "MySQL", "JavaScript"],
+      image: inventoryImage,
+      github: "https://github.com",
+      demo: "https://migsinventory.is-great.net/"
+    },
     {
       id: 5,
       title: "Car Rental Management System",
@@ -167,7 +178,20 @@ export const portfolioData = {
       image: carrentalImage,
       github: "https://github.com/vingit40-bit/carrental.git",
       demo: "Live preview not available"
+    },
+    {
+      id: 6,
+      title: "FinanceHub Mobile Application",
+      category: "Tracker",
+      description: "A comprehensive finance management app with goal tracking, e-wallet accounts that automatically decrease based on expenses, and budget management.",
+      features: ["Goal tracker", "E-wallet management", "Expense tracking", "Budget monitoring"],
+      techStack: ["React Native", "Supabase", "Expo"],
+      image: "/FinanceHub.jpg",
+      github: "https://github.com",
+      demo: "/FinanceHub.apk",
+      isMobileApp: true
     }
+
   ],
 
   education: [
@@ -186,7 +210,7 @@ export const portfolioData = {
       major: "Senior High School",
       institution: "Pantalan Senior High School",
       period: "2021-2022",
-      description: "Focused on ICT fundamentals and computer systems.",
+      description: "Specialized in ICT fundamentals, computer systems, programming basics, and digital literacy.",
       location: "Pantalan, Nasugbu, Batangas"
     }
   ],
