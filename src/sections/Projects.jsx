@@ -85,13 +85,12 @@ const Projects = () => {
                   <p className="mt-3 text-sm leading-relaxed text-text-secondary line-clamp-3 flex-1">{project.description}</p>
                   
                   <a
-                    href={project.isMobileApp ? project.demo : (project.demo && !project.demo.toLowerCase().includes('not available') ? project.demo : project.github)}
+                    href={project.demo && !project.demo.toLowerCase().includes('not available') ? project.demo : project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    download={project.isMobileApp}
                     className="mt-4 inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-secondary transition-colors group-hover:gap-3"
                   >
-                    {project.isMobileApp ? 'Download' : (project.demo && !project.demo.toLowerCase().includes('not available') ? 'Visit' : 'View Code')}
+                    {project.demo && !project.demo.toLowerCase().includes('not available') ? 'Visit' : 'View Code'}
                     <ArrowRight size={16} />
                   </a>
                 </div>
