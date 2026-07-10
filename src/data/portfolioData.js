@@ -188,7 +188,7 @@ export const portfolioData = {
       techStack: ["React Native", "Supabase", "Expo"],
       image: "/FinanceHub.jpg",
       github: "https://github.com",
-      demo: "/FinanceHub.apk",
+      demo: "https://drive.google.com/file/d/17TGUmvhpYSvzdZD7pg0KEsVRJcZvrWD0/view?usp=sharing",
       isMobileApp: true
     }
 
