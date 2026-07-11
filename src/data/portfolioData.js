@@ -2,13 +2,26 @@
 import ecommerceImage from '../assets/ecommerce.png';
 import sfcImage from '../assets/sfc.png';
 import carrentalImage from '../assets/carrental.png';
+import tinmigImage from '../assets/tinmig.png';
 import heroPhoto from '../assets/pic.jpg';
 import aiCertificate from '../certificates/AI_Fundamentals_with_IBM_SkillsBuild_certificate_.pdf';
+import aiCertificateImage from '../certificates/AI_Fundamentals_with_IBM_SkillsBuild_certificate_.png';
 import dataAnalyticsCertificate from '../certificates/Data_Analytics_Essentials.pdf';
+import dataAnalyticsCertificateImage from '../certificates/Data_Analytics_Essentials.png';
 import databasesCertificate from '../certificates/Databases.pdf';
+import databasesCertificateImage from '../certificates/Databases.png';
 import englishIT1Certificate from '../certificates/English_for_IT_1.pdf';
+import englishIT1CertificateImage from '../certificates/English_for_IT_1.png';
 import englishIT2Certificate from '../certificates/English_for_IT_2.pdf';
+import englishIT2CertificateImage from '../certificates/English_for_IT_2.png';
 import packetTracerCertificate from '../certificates/Introduction_to_Packet_Tracer.pdf';
+import packetTracerCertificateImage from '../certificates/Introduction_to_Packet_Tracer.png';
+import artificialIntelligenceCertificate from '../certificates/ArtificialIntelligenceFundamentals_.pdf';
+import artificialIntelligenceCertificateImage from '../certificates/ArtificialIntelligenceFundamentals_.png';
+import bigDataCertificate from '../certificates/Big_Data_Foundations___Level_1.pdf';
+import bigDataCertificateImage from '../certificates/Big_Data_Foundations___Level_1.png';
+import dataFundamentalsCertificate from '../certificates/DataFundamentals.pdf';
+import dataFundamentalsCertificateImage from '../certificates/DataFundamentals.png';
 
 export const portfolioData = {
   hero: {
@@ -163,7 +176,7 @@ export const portfolioData = {
       description: "A comprehensive inventory system with branch-based login for cashiers and QR code attendance tracking.",
       features: ["Branch-based login", "Cashier management", "QR attendance", "Multi-location support"],
       techStack: ["PHP", "MySQL", "JavaScript"],
-      image: inventoryImage,
+      image: tinmigImage,
       github: "https://github.com",
       demo: "https://migsinventory.is-great.net/"
     },
@@ -222,7 +235,8 @@ export const portfolioData = {
       issuer: "IBM",
       date: "2024",
       description: "Introduction to artificial intelligence concepts and IBM AI technologies.",
-      file: aiCertificate
+      file: aiCertificate,
+      image: aiCertificateImage
     },
     {
       id: 2,
@@ -230,7 +244,8 @@ export const portfolioData = {
       issuer: "Coursera",
       date: "2024",
       description: "Learned Excel, SQL, and Tableau for data transformation, organization, and visualization.",
-      file: dataAnalyticsCertificate
+      file: dataAnalyticsCertificate,
+      image: dataAnalyticsCertificateImage
     },
     {
       id: 3,
@@ -239,6 +254,7 @@ export const portfolioData = {
       date: "2024",
       description: "Certified expertise in database management and SQL fundamentals.",
       file: databasesCertificate,
+      image: databasesCertificateImage,
       blur: true
     },
     {
@@ -247,7 +263,8 @@ export const portfolioData = {
       issuer: "Coursera",
       date: "2024",
       description: "B2 level English proficiency for IT professionals and workplace communication.",
-      file: englishIT1Certificate
+      file: englishIT1Certificate,
+      image: englishIT1CertificateImage
     },
     {
       id: 5,
@@ -255,7 +272,8 @@ export const portfolioData = {
       issuer: "Coursera",
       date: "2024",
       description: "Advanced B2 level English for technical IT contexts and professional use.",
-      file: englishIT2Certificate
+      file: englishIT2Certificate,
+      image: englishIT2CertificateImage
     },
     {
       id: 6,
@@ -263,7 +281,35 @@ export const portfolioData = {
       issuer: "Cisco",
       date: "2024",
       description: "Network simulation and configuration using Cisco Packet Tracer tool.",
-      file: packetTracerCertificate
+      file: packetTracerCertificate,
+      image: packetTracerCertificateImage
+    },
+    {
+      id: 7,
+      title: "Artificial Intelligence Fundamentals",
+      issuer: "IBM",
+      date: "2024",
+      description: "Introduction to AI concepts, machine learning fundamentals, and practical applications.",
+      file: artificialIntelligenceCertificate,
+      image: artificialIntelligenceCertificateImage
+    },
+    {
+      id: 8,
+      title: "Big Data Foundations - Level 1",
+      issuer: "IBM",
+      date: "2024",
+      description: "Understanding big data concepts, Hadoop ecosystem, and data processing fundamentals.",
+      file: bigDataCertificate,
+      image: bigDataCertificateImage
+    },
+    {
+      id: 9,
+      title: "Data Fundamentals",
+      issuer: "IBM",
+      date: "2024",
+      description: "Core data concepts, data types, and foundational skills for data management.",
+      file: dataFundamentalsCertificate,
+      image: dataFundamentalsCertificateImage
     }
   ],
 
@@ -283,7 +329,7 @@ export const portfolioData = {
   stats: [
     { value: 1, label: "Years Experience" },
     { value: 4, label: "Projects Completed" },
-    { value: 4, label: "Certifications" },
+    { value: 9, label: "Certifications" },
     { value: 1, label: "Internship" }
   ]
 };

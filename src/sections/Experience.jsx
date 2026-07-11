@@ -1,5 +1,5 @@
 ﻿import { motion } from 'framer-motion';
-import { ArrowRight, Download } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { portfolioData } from '../data/portfolioData';
 import { fadeInUp, staggerContainer } from '../animations/variants';
 
@@ -54,13 +54,6 @@ const Experience = () => {
               ))}
             </div>
           </div>
-
-          <motion.div variants={fadeInUp} className="text-center">
-            <a href="#contact" className="btn-primary inline-flex items-center gap-2 px-8 py-3">
-              <Download size={18} />
-              Request Resume
-            </a>
-          </motion.div>
         </motion.div>
       </div>
     </section>
