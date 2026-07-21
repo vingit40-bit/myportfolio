@@ -3,6 +3,7 @@ import ecommerceImage from '../assets/ecommerce.png';
 import sfcImage from '../assets/sfc.png';
 import carrentalImage from '../assets/carrental.png';
 import tinmigImage from '../assets/tinmig.png';
+import resortImage from '../assets/resort.png';
 import heroPhoto from '../assets/pic.jpg';
 import aiCertificate from '../certificates/AI_Fundamentals_with_IBM_SkillsBuild_certificate_.pdf';
 import aiCertificateImage from '../certificates/AI_Fundamentals_with_IBM_SkillsBuild_certificate_.png';
@@ -138,7 +139,7 @@ export const portfolioData = {
   projects: [
     {
       id: 1,
-      title: "Inventory Management System",
+      title: "Inventory & POS Management System",
       category: "Inventory System",
       description: "A comprehensive inventory system with employee management featuring payroll, cashier attendance tracking, and transaction handling.",
       features: ["Employee management", "Payroll system", "Cashier attendance", "Transaction handling"],
@@ -164,14 +165,14 @@ export const portfolioData = {
       category: "Landing Page",
       description: "A customizable landing page with dynamic content management and responsive design. Built during internship at ProvideTech Brandwave Advertising Services.",
       features: ["Custom content", "Responsive design", "Dynamic sections", "Modern UI"],
-      techStack: ["React", "Tailwind CSS"],
+      techStack: ["PHP", "Tailwind CSS"],
       image: sfcImage,
       github: "https://github.com",
       demo: "https://sfcfranchise.ph/"
     },
      {
       id: 4,
-      title: "Inventory Management System",
+      title: "Multi-Branch Inventory & POS System",
       category: "Inventory System",
       description: "A comprehensive inventory system with branch-based login for cashiers and QR code attendance tracking.",
       features: ["Branch-based login", "Cashier management", "QR attendance", "Multi-location support"],
@@ -201,6 +202,17 @@ export const portfolioData = {
       image: "/FinanceHub.jpg",
       github: "https://github.com",
       demo: "https://drive.google.com/file/d/17TGUmvhpYSvzdZD7pg0KEsVRJcZvrWD0/view?usp=sharing"
+    },
+    {
+      id: 7,
+      title: "Luxury Resort Landing Page",
+      category: "Landing Page",
+      description: "A static landing page for a luxury resort featuring elegant design and responsive layout.",
+      features: ["Static landing page", "Responsive design", "Elegant UI", "Luxury resort theme"],
+      techStack: ["HTML", "CSS", "JavaScript"],
+      image: resortImage,
+      github: "https://github.com",
+      demo: "https://luxuryresort.is-great.net/"
     }
 
   ],

@@ -84,6 +84,19 @@ const Projects = () => {
                   <h3 className="text-lg font-bold leading-tight text-white">{project.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-text-secondary line-clamp-3 flex-1">{project.description}</p>
                   
+                  {project.techStack && (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {project.techStack.map((tech, index) => (
+                        <span
+                          key={index}
+                          className="px-2 py-1 text-xs font-medium bg-white/10 text-white/80 rounded"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  
                   <a
                     href={project.demo && !project.demo.toLowerCase().includes('not available') ? project.demo : project.github}
                     target="_blank"
