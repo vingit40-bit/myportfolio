@@ -4,6 +4,8 @@ import sfcImage from '../assets/sfc.png';
 import carrentalImage from '../assets/carrental.png';
 import tinmigImage from '../assets/tinmig.png';
 import resortImage from '../assets/resort.png';
+import agricultureimage from '../assets/agriculture.png';
+import airlineImage from '../assets/airline.png';
 import heroPhoto from '../assets/pic.jpg';
 import aiCertificate from '../certificates/AI_Fundamentals_with_IBM_SkillsBuild_certificate_.pdf';
 import aiCertificateImage from '../certificates/AI_Fundamentals_with_IBM_SkillsBuild_certificate_.png';
@@ -213,6 +215,28 @@ export const portfolioData = {
       image: resortImage,
       github: "https://github.com",
       demo: "https://luxuryresort.is-great.net/"
+    },
+    {
+      id: 8,
+      title: "GreenHarvest - Sustainable Agriculture Solutions",
+      category: "Landing Page",
+      description: "A comprehensive landing page for sustainable agriculture featuring hero slider, services showcase, product catalog, testimonials, and contact sections.",
+      features: ["Hero image slider", "Services showcase", "Product catalog", "Testimonials", "Contact form", "Responsive design"],
+      techStack: ["React", "Tailwind CSS", "JavaScript"],
+      image: agricultureimage,
+      github: "https://github.com",
+      demo: "https://agriculture.is-great.net/"
+    },
+    {
+      id: 9,
+      title: "SkyWay Airlines - Fly With Confidence",
+      category: "Landing Page",
+      description: "A comprehensive airline landing page featuring flight booking form, popular destinations, premium services showcase, and statistics section with smooth animations.",
+      features: ["Flight booking form", "Destinations showcase", "Premium services", "Statistics section", "Smooth animations", "Responsive design"],
+      techStack: ["React", "Tailwind CSS", "JavaScript"],
+      image: airlineImage,
+      github: "https://github.com",
+      demo: "https://airline.is-great.org/"
     }
 
   ],
