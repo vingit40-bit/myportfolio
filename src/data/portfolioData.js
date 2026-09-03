@@ -159,7 +159,7 @@ export const portfolioData = {
       techStack: ["PHP", "MySQL", "PayMongo API"],
       image: ecommerceImage,
       github: "https://github.com",
-      demo: "https://jmshopee.is-great.net/"
+      demo: "https://jmshoppee.shop/"
     },
     {
       id: 3,
