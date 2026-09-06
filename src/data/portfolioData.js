@@ -236,7 +236,7 @@ export const portfolioData = {
       techStack: ["React", "Tailwind CSS", "JavaScript"],
       image: airlineImage,
       github: "https://github.com",
-      demo: "https://airline.is-great.org/"
+      demo: "https://heartfelt-alpaca-5736d5.netlify.app/"
     }
 
   ],
