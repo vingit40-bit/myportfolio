@@ -110,7 +110,6 @@ export const portfolioData = {
   },
 
   experience: [
-    {
       id: 1,
       title: "Web Developer Intern",
       company: "ProvideTech Brandwave Advertising Services",
@@ -246,7 +245,6 @@ export const portfolioData = {
       period: "2021-2022",
       description: "Specialized in ICT fundamentals, computer systems, programming basics, and digital literacy.",
       location: "Pantalan, Nasugbu, Batangas"
-    }
   ],
 
   services: [],
