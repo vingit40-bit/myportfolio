@@ -1,4 +1,4 @@
-﻿import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -9,6 +9,7 @@ import About from './sections/About';
 import Experience from './sections/Experience';
 import Education from './sections/Education';
 import Skills from './sections/Skills';
+import Technologies from './sections/Technologies';
 import Projects from './sections/Projects';
 import Certificates from './sections/Certificates';
 import Contact from './sections/Contact';
@@ -39,6 +40,7 @@ function App() {
                 <Experience />
                 <Education />
                 <Skills />
+                <Technologies />
                 <Projects />
                 <Certificates />
                 <Contact />
