@@ -196,17 +196,6 @@ export const portfolioData = {
     },
     {
       id: 6,
-      title: "FinanceHub Mobile Application",
-      category: "Tracker",
-      description: "A comprehensive finance management app with goal tracking, e-wallet accounts that automatically decrease based on expenses, and budget management.",
-      features: ["Goal tracker", "E-wallet management", "Expense tracking", "Budget monitoring"],
-      techStack: ["React Native", "Supabase", "Expo"],
-      image: "/FinanceHub.jpg",
-      github: "https://github.com",
-      demo: "https://drive.google.com/file/d/17TGUmvhpYSvzdZD7pg0KEsVRJcZvrWD0/view?usp=sharing"
-    },
-    {
-      id: 7,
       title: "Luxury Resort Landing Page",
       category: "Landing Page",
       description: "A static landing page for a luxury resort featuring elegant design and responsive layout.",
@@ -217,7 +206,7 @@ export const portfolioData = {
       demo: "https://luxuryresort.is-great.net/"
     },
     {
-      id: 8,
+      id: 7,
       title: "GreenHarvest - Sustainable Agriculture Solutions",
       category: "Landing Page",
       description: "A comprehensive landing page for sustainable agriculture featuring hero slider, services showcase, product catalog, testimonials, and contact sections.",
@@ -228,7 +217,7 @@ export const portfolioData = {
       demo: "https://agriculture.is-great.net/"
     },
     {
-      id: 9,
+      id: 8,
       title: "SkyWay Airlines - Fly With Confidence",
       category: "Landing Page",
       description: "A comprehensive airline landing page featuring flight booking form, popular destinations, premium services showcase, and statistics section with smooth animations.",
