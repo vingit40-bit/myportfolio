@@ -1,4 +1,4 @@
-﻿import inventoryImage from '../assets/inventory.png';
+import inventoryImage from '../assets/inventory.png';
 import ecommerceImage from '../assets/ecommerce.png';
 import sfcImage from '../assets/sfc.png';
 import carrentalImage from '../assets/carrental.png';
@@ -110,6 +110,7 @@ export const portfolioData = {
   },
 
   experience: [
+    {
       id: 1,
       title: "Web Developer Intern",
       company: "ProvideTech Brandwave Advertising Services",
@@ -138,17 +139,16 @@ export const portfolioData = {
   ],
 
   projects: [
-    {    {
+    {
       id: 1,
       title: "SkyWay Airlines - Fly With Confidence",
       category: "Landing Page",
-      description: "A premium airline/travel company landing page called "Airlines" with the tagline "Journey Beyond." It's a cinematic, luxury-focused website designed to showcase high-end travel experiences."],
+      description: "A premium airline/travel company landing page called \"Airlines\" with the tagline \"Journey Beyond.\" It's a cinematic, luxury-focused website designed to showcase high-end travel experiences.",
       techStack: ["React", "Tailwind CSS", "JavaScript"],
       image: airlineImage,
       github: "https://github.com",
       demo: "https://luxuryairlines.netlify.app/"
-    }
-     
+    },
     {
       id: 2,
       title: "Beauty & Skincare E-Commerce Website",
@@ -171,7 +171,7 @@ export const portfolioData = {
       github: "https://github.com",
       demo: "https://sfcfranchise.ph/"
     },
-     {
+    {
       id: 4,
       title: "Multi-Branch Inventory & POS System",
       category: "Inventory System",
@@ -215,16 +215,17 @@ export const portfolioData = {
       github: "https://github.com",
       demo: "https://agriculture.is-great.net/"
     },
-     id: 8,
+    {
+      id: 8,
       title: "Inventory & POS Management System",
       category: "Inventory System",
       description: "A comprehensive inventory system with employee management featuring payroll, cashier attendance tracking, and transaction handling.",
       features: ["Employee management", "Payroll system", "Cashier attendance", "Transaction handling"],
-      techStack: [ "PHP", "MySQL"],
+      techStack: ["PHP", "MySQL"],
       image: inventoryImage,
       github: "https://github.com",
       demo: "https://miginventory.is-great.net"
-    },
+    }
   ],
 
   education: [
@@ -245,6 +246,7 @@ export const portfolioData = {
       period: "2021-2022",
       description: "Specialized in ICT fundamentals, computer systems, programming basics, and digital literacy.",
       location: "Pantalan, Nasugbu, Batangas"
+    }
   ],
 
   services: [],
