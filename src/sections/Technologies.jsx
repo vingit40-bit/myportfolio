@@ -1,35 +1,21 @@
 import { motion } from 'framer-motion';
 import { portfolioData } from '../data/portfolioData';
 import { fadeInUp } from '../animations/variants';
-import {
-  Code2,
-  Database,
-  FileText,
-  Goal,
-  LayoutTemplate,
-  Plug,
-  ServerCog,
-  Smartphone,
-  Users,
-} from 'lucide-react';
-
-const iconMap = {
-  Code2,
-  Database,
-  FileText,
-  Goal,
-  LayoutTemplate,
-  Plug,
-  ServerCog,
-  Smartphone,
-  Users,
-};
 
 const Technologies = () => {
-  const skills = portfolioData.skills.featured;
+  const technologies = [
+    { name: 'HTML', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+    { name: 'CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+    { name: 'JavaScript', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+    { name: 'PHP', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg' },
+    { name: 'React.js', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    { name: 'React Native', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+    { name: 'Tailwind CSS', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg' },
+    { name: 'MySQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+  ];
   
-  // Duplicate the skills array for seamless infinite scrolling
-  const duplicatedSkills = [...skills, ...skills, ...skills, ...skills];
+  // Duplicate the technologies array for seamless infinite scrolling
+  const duplicatedTechnologies = [...technologies, ...technologies, ...technologies, ...technologies];
 
   return (
     <>
@@ -70,47 +56,47 @@ const Technologies = () => {
         .tech-slide-track {
           animation: scroll 40s linear infinite;
           display: flex;
-          width: calc(200px * ${duplicatedSkills.length});
+          width: calc(200px * ${duplicatedTechnologies.length});
         }
 
         @keyframes scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-200px * ${skills.length})); }
+          100% { transform: translateX(calc(-200px * ${technologies.length})); }
         }
 
         .tech-slide {
           height: 120px;
           width: 200px;
           display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 1rem;
-        }
-
-        .tech-icon-wrapper {
-          display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
+          padding: 1rem;
           gap: 0.5rem;
+        }
+
+        .tech-logo {
+          width: 48px;
+          height: 48px;
+          object-fit: contain;
           transition: transform 0.3s ease;
         }
 
-        .tech-slide:hover .tech-icon-wrapper {
-          transform: scale(1.1);
-        }
-
-        .tech-icon {
-          width: 48px;
-          height: 48px;
-          color: rgba(255, 255, 255, 0.8);
-        }
-
         .tech-name {
-          font-size: 0.75rem;
+          font-size: 0.875rem;
           font-weight: 600;
-          color: rgba(255, 255, 255, 0.7);
+          color: rgba(255, 255, 255, 0.9);
           text-align: center;
+          transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .tech-slide:hover .tech-logo {
+          transform: scale(1.15);
+        }
+
+        .tech-slide:hover .tech-name {
+          transform: scale(1.05);
+          color: rgba(255, 255, 255, 1);
         }
 
         @media (min-width: 768px) {
@@ -130,21 +116,21 @@ const Technologies = () => {
           }
 
           .tech-slide-track {
-            width: calc(220px * ${duplicatedSkills.length});
+            width: calc(220px * ${duplicatedTechnologies.length});
           }
 
           @keyframes scroll {
             0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-220px * ${skills.length})); }
+            100% { transform: translateX(calc(-220px * ${technologies.length})); }
           }
 
-          .tech-icon {
-            width: 56px;
-            height: 56px;
+          .tech-logo {
+            width: 64px;
+            height: 64px;
           }
 
           .tech-name {
-            font-size: 0.875rem;
+            font-size: 1rem;
           }
         }
       `}</style>
@@ -167,17 +153,16 @@ const Technologies = () => {
 
             <motion.div variants={fadeInUp} className="tech-slider-container">
               <div className="tech-slide-track">
-                {duplicatedSkills.map((skill, index) => {
-                  const Icon = iconMap[skill.icon] || Code2;
-                  return (
-                    <div key={`${skill.name}-${index}`} className="tech-slide">
-                      <div className="tech-icon-wrapper">
-                        <Icon className="tech-icon" strokeWidth={1.5} />
-                        <span className="tech-name">{skill.name}</span>
-                      </div>
-                    </div>
-                  );
-                })}
+                {duplicatedTechnologies.map((tech, index) => (
+                  <div key={`${tech.name}-${index}`} className="tech-slide">
+                    <img 
+                      src={tech.logo} 
+                      alt={tech.name} 
+                      className="tech-logo"
+                    />
+                    <span className="tech-name">{tech.name}</span>
+                  </div>
+                ))}
               </div>
             </motion.div>
           </motion.div>
