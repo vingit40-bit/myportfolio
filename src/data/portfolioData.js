@@ -4,7 +4,7 @@ import sfcImage from '../assets/sfc.png';
 import carrentalImage from '../assets/carrental.png';
 import tinmigImage from '../assets/tinmig.png';
 import resortImage from '../assets/resort.png';
-import agricultureimage from '../assets/agriculture.png';
+import libraryImage from '../assets/library.png';
 import airlineImage from '../assets/airline.png';
 import heroPhoto from '../assets/pic.jpg';
 import aiCertificate from '../certificates/AI_Fundamentals_with_IBM_SkillsBuild_certificate_.pdf';
@@ -206,14 +206,14 @@ export const portfolioData = {
     },
     {
       id: 7,
-      title: "GreenHarvest - Sustainable Agriculture Solutions",
+      title: "Explore a world of 3D",
       category: "Landing Page",
-      description: "A comprehensive landing page for sustainable agriculture featuring hero slider, services showcase, product catalog, testimonials, and contact sections.",
+      description: "Explore, discover, and interact with beautifully crafted 3D models, environments, and digital collections. Designed as more than a catalog, the library turns every asset into an interactive experience where you can explore details, rotate objects, and discover new perspectives.",
       features: ["Hero image slider", "Services showcase", "Product catalog", "Testimonials", "Contact form", "Responsive design"],
-      techStack: ["React", "Tailwind CSS", "JavaScript"],
-      image: agricultureimage,
+      techStack: ["HTML5", "CSS3", "JavaScript", "Three.js", "WebGL", "Canvas API"],
+      image: libraryImage,
       github: "https://github.com",
-      demo: "https://agriculture.is-great.net/"
+      demo: "https://meshvaults.netlify.app/"
     },
     {
       id: 8,
