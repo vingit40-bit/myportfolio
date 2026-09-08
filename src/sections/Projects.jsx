@@ -23,53 +23,45 @@ const Projects = () => {
         }
 
         .projects-cards-list {
-          display: grid;
-          gap: 1rem;
-          grid-auto-flow: column;
-          grid-template-rows: 200px 1fr;
+          --carousel-duration: 40s;
+          --carousel-item-gap: 1rem;
+          position: relative;
           width: 100%;
+          height: 450px;
           list-style: none;
-          min-height: 400px;
-          overflow-x: auto;
-          overscroll-behavior-x: contain;
+          overflow: clip;
           padding: 1rem;
-          scroll-behavior: smooth;
-          scroll-padding-inline: 1rem;
-          scroll-snap-type: x mandatory;
-          scrollbar-width: thin;
-          scrollbar-color: rgba(8, 42, 123, 0.3) transparent;
-        }
-
-        .projects-cards-list::-webkit-scrollbar {
-          height: 8px;
-        }
-
-        .projects-cards-list::-webkit-scrollbar-track {
-          background: transparent;
-        }
-
-        .projects-cards-list::-webkit-scrollbar-thumb {
-          background-color: rgba(8, 42, 123, 0.3);
-          border-radius: 4px;
+          mask-image: linear-gradient(to right, transparent, black 10% 90%, transparent);
         }
 
         .project-card {
-          scroll-snap-align: start;
+          position: absolute;
+          top: 1rem;
+          left: calc(100% + var(--carousel-item-gap));
           background-color: rgba(255, 255, 255, 0.05);
           border-radius: 1rem;
           box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
           display: grid;
-          grid-row: 1/-1;
-          grid-template-rows: subgrid;
+          grid-template-rows: 192px auto;
+          gap: 0.25rem;
           padding: 0.75rem;
           width: min(75cqi, 400px);
+          height: 418px;
           border: 1px solid rgba(255, 255, 255, 0.1);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          animation: projects-marquee var(--carousel-duration) linear infinite;
+          animation-delay: calc(var(--carousel-duration) / var(--items) * var(--index) * -1);
+          will-change: transform;
         }
 
-        .project-card:hover {
-          transform: translateY(-4px);
-          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+        .projects-cards-list:hover .project-card,
+        .projects-cards-list:focus-within .project-card {
+          animation-play-state: paused;
+        }
+
+        .project-card:only-child {
+          left: 50%;
+          animation: none;
+          transform: translateX(-50%);
         }
 
         .project-visual {
@@ -155,14 +147,27 @@ const Projects = () => {
           color: #1e40af;
         }
 
+        @keyframes projects-marquee {
+          100% {
+            transform: translateX(calc((var(--items) * (min(75cqi, 400px) + var(--carousel-item-gap))) * -1));
+          }
+        }
+
         @media (min-width: 768px) {
           .projects-cards-list {
+            --carousel-duration: 30s;
             padding: 2rem;
-            scroll-padding-inline: 2rem;
           }
 
           .project-card {
+            top: 2rem;
             width: min(60cqi, 450px);
+          }
+
+          @keyframes projects-marquee {
+            100% {
+              transform: translateX(calc((var(--items) * (min(60cqi, 450px) + var(--carousel-item-gap))) * -1));
+            }
           }
         }
       `}</style>
@@ -200,9 +205,16 @@ const Projects = () => {
             </motion.div>
 
             <motion.div variants={fadeInUp} className="projects-carousel-container">
-              <ul className="projects-cards-list">
-                {filteredProjects.map((project) => (
-                  <li key={project.id} className="project-card">
+              <ul
+                className="projects-cards-list"
+                style={{ '--items': filteredProjects.length }}
+              >
+                {filteredProjects.map((project, index) => (
+                  <li
+                    key={project.id}
+                    className="project-card"
+                    style={{ '--index': index }}
+                  >
                     <div className="project-visual">
                       {project.image && !project.image.includes('placeholder') ? (
                         <img
