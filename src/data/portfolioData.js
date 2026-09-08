@@ -1,4 +1,4 @@
-import inventoryImage from '../assets/inventory.png';
+﻿import inventoryImage from '../assets/inventory.png';
 import ecommerceImage from '../assets/ecommerce.png';
 import sfcImage from '../assets/sfc.png';
 import carrentalImage from '../assets/carrental.png';
@@ -210,7 +210,7 @@ export const portfolioData = {
       category: "Landing Page",
       description: "Explore, discover, and interact with beautifully crafted 3D models, environments, and digital collections. Designed as more than a catalog, the library turns every asset into an interactive experience where you can explore details, rotate objects, and discover new perspectives.",
       features: ["Hero image slider", "Services showcase", "Product catalog", "Testimonials", "Contact form", "Responsive design"],
-      techStack: ["HTML5", "CSS3", "JavaScript", "Three.js", "WebGL", "Canvas API"],
+      techStack: ["HTML5", "CSS3", "JavaScript", "Three.js", "WebGL"],
       image: libraryImage,
       github: "https://github.com",
       demo: "https://meshvaults.netlify.app/"

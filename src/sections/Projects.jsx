@@ -7,7 +7,7 @@ import { fadeInUp } from '../animations/variants';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['All', 'Booking system', 'E-Commerce', 'Inventory System', 'Landing Page', 'Tracker'];
+  const filters = ['All', 'Booking system', 'E-Commerce', 'Inventory System', 'Landing Page'];
 
   const filteredProjects = activeFilter === 'All' 
     ? portfolioData.projects 

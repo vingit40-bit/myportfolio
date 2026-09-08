@@ -20,7 +20,7 @@ const Technologies = () => {
 
   return (
     <>
-      <style jsx>{`
+      <style>{`
         .tech-slider-container {
           background: rgba(255, 255, 255, 0.05);
           box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
@@ -57,12 +57,12 @@ const Technologies = () => {
         .tech-slide-track {
           animation: scroll 40s linear infinite;
           display: flex;
-          width: calc(200px * ${duplicatedTechnologies.length});
+          width: calc(200px * 36);
         }
 
         @keyframes scroll {
           0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-200px * ${technologies.length})); }
+          100% { transform: translateX(calc(-200px * 9)); }
         }
 
         .tech-slide {
@@ -117,12 +117,12 @@ const Technologies = () => {
           }
 
           .tech-slide-track {
-            width: calc(220px * ${duplicatedTechnologies.length});
+            width: calc(220px * 36);
           }
 
           @keyframes scroll {
             0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-220px * ${technologies.length})); }
+            100% { transform: translateX(calc(-220px * 9)); }
           }
 
           .tech-logo {
